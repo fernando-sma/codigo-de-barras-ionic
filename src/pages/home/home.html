@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <button ion-button full color = "primary" outline (click) = "scanner()">Scannear</button>
+<b>F</b><br>
+
+<div *ngIf = "results">
+
+ <p> {{resultados.text}}</p><br>
+ <p> {{resultados.format}}</p><br>
+ 
+
+</div>
+
+
+{{resultados}}
+</ion-content>
